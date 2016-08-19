@@ -24,11 +24,11 @@ print ('Follow the setup instructions.\nInsert "exit" to leave the application.\
 cmd = str.encode('\r\n') #initialize the variable cmd
 
 #send/write a command to the serial
-ser.write(str.encode('JDX 1\r\n')) #sets correlation between joystick direction and stage's X axis direction of movement 
+ser.write(str.encode('JXD 1\r\n')) #sets correlation between joystick direction and stage's X axis direction of movement 
 								   #joystick right, stage moves mechanically right, image on screen moves right
 time.sleep(1)
 
-ser.write(str.encode('JDY -1\r\n')) #changes correlation between joystick direction and stage's Y axis direction of movement 
+ser.write(str.encode('JYD -1\r\n')) #changes correlation between joystick direction and stage's Y axis direction of movement 
 									#joystick forward, stage moves mechanically back, image on screen moves forward
 time.sleep(1)
 
