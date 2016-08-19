@@ -26,7 +26,9 @@ to a folder called "Images" in the same location that you saved the above files.
 
 If you would like to see the camera's livestream, run camera_vg_take2_showVid.exe which will show 
 a video from the camera in a pop-up window. Press any key to exit out of the viewing window. 
-You can also use ToupView software to view a live video from the camera.
+You can also use ToupView software to view a live video from the camera. However, it is best to close 
+these viewing windows before you run priorStagePattern.py to capture images since the camera connection may 
+get overloaded if too many programs are running.
 
 You can change the set starting and ending points of the pattern in priorStagePattern.py.
 
@@ -34,7 +36,8 @@ If you need to edit the executable (camera_vg_take2.exe), download the Visual-St
 github and run "camera_vg_take2_newsln.sln" in Visual Studio 
 (located on GitHub in vg_automated_microscope/Visual-Studio-2015/camera_vg_take2_newsln/)
 	Edit camera_vg_take2.exe to change the image file type, change the location 
-	that the images are saved to, or change camera settings.
+	that the images are saved to, change camera settings, or change the resolution of the images. To change
+	resolution, edit the numerical values for CAP_PROP_FRAME_WIDTH and CAP_PROP_FRAME_HEIGHT.
 =================================================================
 STAGE COMMANDS:
 Run the "basic_stage_control" program (python) to send commands directly to the stage. 
